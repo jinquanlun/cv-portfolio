@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伦锦泉 - 个人作品集 | Portfolio</title>
+    <meta name="description" content="伦锦泉的个人作品集网站 - 心理学与经济学学生，具备丰富的编程和金融知识">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="infinity-symbol">∞</span>
+                <span class="logo-text">伦锦泉</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">技能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">经历</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系</a>
+                </li>
+            </ul>
+            <div class="resume-btn">
+                <a href="#resume" class="btn-resume">
+                    <i class="fas fa-download"></i>
+                    下载简历
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="wave">👋</span>
+                        <span>你好，我是</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="name-highlight">伦锦泉</span>
+                        <br>
+                        <span class="typing-text">心理学 × 经济学 × 编程</span>
+                    </h1>
+                    <p class="hero-subtitle">跨学科学习者 | 数据分析师 | 创新思维者</p>
+                    <p class="hero-description">
+                        🎓 心理学专业学生，同时精通经济学、金融学（CFA）和编程技术<br>
+                        💡 致力于将分析思维与创造性问题解决相结合<br>
+                        🚀 推动创新和数字化转型的实践者
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i>
+                            联系我
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                            <i class="fas fa-user"></i>
+                            了解更多
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="微信">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="social-link" title="邮箱">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-art-container">
+                        <div class="floating-geometric">
+                            <div class="geometric-shape shape-1"></div>
+                            <div class="geometric-shape shape-2"></div>
+                            <div class="geometric-shape shape-3"></div>
+                            <div class="geometric-shape shape-4"></div>
+                            <div class="geometric-shape shape-5"></div>
+                        </div>
+                        <div class="hero-gradient-orb orb-1"></div>
+                        <div class="hero-gradient-orb orb-2"></div>
+                        <div class="hero-gradient-orb orb-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="82">0</span>
+                    <span class="stat-plus"></span>
+                    <span class="stat-label">平均学分绩点<br>Average GPA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">年学习经验<br>Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">专业领域<br>Areas of Expertise</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">向下滚动</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">关于我</span>
+                <h2 class="section-title">认识一下我</h2>
+                <p class="section-subtitle">跨学科的学习者，用多元化视角解决问题</p>
+            </div>
+            <div class="about-content">
+                <div class="about-visual">
+                    <div class="about-art-container">
+                        <div class="artistic-element element-1">
+                            <div class="glass-card psychology-card">
+                                <i class="fas fa-brain"></i>
+                                <span>心理学</span>
+                            </div>
+                        </div>
+                        <div class="artistic-element element-2">
+                            <div class="glass-card economics-card">
+                                <i class="fas fa-chart-line"></i>
+                                <span>经济学</span>
+                            </div>
+                        </div>
+                        <div class="artistic-element element-3">
+                            <div class="glass-card programming-card">
+                                <i class="fas fa-code"></i>
+                                <span>编程</span>
+                            </div>
+                        </div>
+                        <div class="about-gradient-bg"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-heading">你好！我是伦锦泉 👋</h3>
+                    <p class="about-description">
+                        作为一名充满热情的心理学学生，我拥有多元化的学术背景。除了心理学专业外，
+                        我还深入学习了微观经济学、宏观经济学、CFA金融课程以及计算机科学。
+                        凭借82分的平均学分绩点，我坚信跨学科学习的力量。
+                    </p>
+                    <p class="about-description">
+                        我的学习理念是将不同领域的知识融合，创造出独特的解决方案。
+                        无论是心理学的人性洞察、经济学的逻辑分析，还是编程的技术实现，
+                        我都能够有机地结合起来，为复杂问题提供创新的解决思路。
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎯</div>
+                            <div class="highlight-content">
+                                <h4>专业目标</h4>
+                                <p>成为连接人文社科与科技创新的桥梁</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💡</div>
+                            <div class="highlight-content">
+                                <h4>核心优势</h4>
+                                <p>跨学科思维 × 实践能力 × 创新精神</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-achievements">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-content">
+                                <span class="achievement-year">2024</span>
+                                <span class="achievement-title">"优秀学生干部"荣誉称号</span>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🐍</div>
+                            <div class="achievement-content">
+                            <span class="achievement-year">2024</span>
+                                <span class="achievement-title">全国计算机等级考试Python二级证书</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">技能专长</span>
+                <h2 class="section-title">我的技能矩阵</h2>
+                <p class="section-subtitle">跨领域的知识体系与实践能力</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category active" data-category="academic">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>学术专业</span>
+                    </div>
+                    <div class="skill-category" data-category="technical">
+                        <i class="fas fa-code"></i>
+                        <span>技术能力</span>
+                    </div>
+                    <div class="skill-category" data-category="finance">
+                        <i class="fas fa-chart-line"></i>
+                        <span>金融财务</span>
+                    </div>
+                    <div class="skill-category" data-category="soft">
+                        <i class="fas fa-users"></i>
+                        <span>软技能</span>
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Academic Skills -->
+                    <div class="skills-group active" data-group="academic">
+                        <div class="skill-item">
+                            <div class="skill-icon">🧠</div>
+                            <div class="skill-info">
+                                <h4>心理学</h4>
+                                <p>认知心理学、社会心理学、统计心理学</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <div class="skill-info">
+                                <h4>经济学</h4>
+                                <p>微观经济学、宏观经济学、计量经济学</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📚</div>
+                            <div class="skill-info">
+                                <h4>研究方法</h4>
+                                <p>实验设计、数据分析、学术写作</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="78"></div>
+                                </div>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="skills-group" data-group="technical">
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <p>数据分析、机器学习、Web开发</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-info">
+                                <h4>Web开发</h4>
+                                <p>HTML, CSS, JavaScript, React</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <div class="skill-info">
+                                <h4>数据分析</h4>
+                                <p>SPSS, R, Excel, Pandas, NumPy</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🤖</div>
+                            <div class="skill-info">
+                                <h4>AI工具应用</h4>
+                                <p>ChatGPT, Claude, 数据可视化</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finance Skills -->
+                    <div class="skills-group" data-group="finance">
+                        <div class="skill-item">
+                            <div class="skill-icon">💰</div>
+                            <div class="skill-info">
+                                <h4>CFA课程</h4>
+                                <p>投资分析、财务报表、衍生品</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📈</div>
+                            <div class="skill-info">
+                                <h4>金融建模</h4>
+                                <p>Excel建模、风险评估、投资组合</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💡</div>
+                            <div class="skill-info">
+                                <h4>市场分析</h4>
+                                <p>技术分析、基本面分析、宏观研究</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="72"></div>
+                                </div>
+                                <span class="skill-percentage">72%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-group" data-group="soft">
+                        <div class="skill-item">
+                            <div class="skill-icon">👥</div>
+                            <div class="skill-info">
+                                <h4>团队协作</h4>
+                                <p>项目管理、沟通协调、冲突解决</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <div class="skill-info">
+                                <h4>领导能力</h4>
+                                <p>团队引导、决策制定、目标达成</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-info">
+                                <h4>学习能力</h4>
+                                <p>快速适应、自主学习、知识整合</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💡</div>
+                            <div class="skill-info">
+                                <h4>创新思维</h4>
+                                <p>跨界思考、问题解决、创意设计</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">成长历程</span>
+                <h2 class="section-title">我的经历与成就</h2>
+                <p class="section-subtitle">每一步都是成长，每一次尝试都是收获</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2024年</div>
+                    <div class="timeline-icon">🏆</div>
+                    <div class="timeline-content">
+                        <h3>创新创业大赛团队负责人</h3>
+                        <p class="timeline-period">大一学年 · 领导力实践</p>
+                        <p class="timeline-description">
+                            在大学生创新创业竞赛中担任团队负责人，成功管理项目规划、实施和团队协调工作。
+                            通过这次经历，不仅获得了奖项认可，更重要的是锻炼了组织领导能力和项目管理技能。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">项目管理</span>
+                            <span class="tag">团队领导</span>
+                            <span class="tag">创新思维</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-date">2024年</div>
+                    <div class="timeline-icon">🤖</div>
+                    <div class="timeline-content">
+                        <h3>AI驱动的网站开发</h3>
+                        <p class="timeline-period">个人项目 · 技术实践</p>
+                        <p class="timeline-description">
+                            独立使用AI工具构建网站，实现数据可视化功能。
+                            将技术技能与创造性问题解决相结合，创造出引人入胜的数字体验。
+                            这个项目展现了我对新技术的快速学习能力和实际应用能力。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Web开发</span>
+                            <span class="tag">AI工具</span>
+                            <span class="tag">数据可视化</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-date">2024年</div>
+                    <div class="timeline-icon">📰</div>
+                    <div class="timeline-content">
+                        <h3>校园新媒体团队成员</h3>
+                        <p class="timeline-period">学年项目 · 传播实践</p>
+                        <p class="timeline-description">
+                            作为学校新媒体团队的一员，积极参与校园文化推广和营销活动。
+                            通过内容创作和传播策略的实践，提升了沟通表达能力和内容创作技能，
+                            同时也培养了对数字媒体和品牌传播的深度理解。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">内容创作</span>
+                            <span class="tag">数字营销</span>
+                            <span class="tag">品牌传播</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-date">2024年</div>
+                    <div class="timeline-icon">🐍</div>
+                    <div class="timeline-content">
+                        <h3>Python编程能力认证</h3>
+                        <p class="timeline-period">自主学习 · 技能提升</p>
+                        <p class="timeline-description">
+                            通过自学Python编程，成功通过全国计算机等级考试Python二级。
+                            这不仅证明了我强大的自学能力和技术基础，更体现了我对新技术的
+                            热情和持续学习的态度。编程技能为我的跨学科研究提供了强有力的工具支持。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python编程</span>
+                            <span class="tag">自主学习</span>
+                            <span class="tag">技术认证</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-date">持续进行</div>
+                    <div class="timeline-icon">📊</div>
+                    <div class="timeline-content">
+                        <h3>CFA金融课程学习</h3>
+                        <p class="timeline-period">课余时间 · 专业拓展</p>
+                        <p class="timeline-description">
+                            利用课余时间系统学习CFA课程，掌握金融、经济学及相关原理知识。
+                            深入理解行业动态，为未来的职业发展建立了坚实的基础。
+                            这种主动的跨领域学习体现了我对知识的渴望和对未来的规划。
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">金融分析</span>
+                            <span class="tag">投资理论</span>
+                            <span class="tag">职业发展</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">项目作品</span>
+                <h2 class="section-title">精选项目展示</h2>
+                <p class="section-subtitle">理论与实践的完美结合</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站开发</button>
+                <button class="filter-btn" data-filter="data">数据分析</button>
+                <button class="filter-btn" data-filter="research">学术研究</button>
+                <button class="filter-btn" data-filter="finance">金融项目</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-view">
+                                <i class="fas fa-eye"></i>
+                                查看项目
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">个人作品集网站</h3>
+                        <p class="project-description">
+                            使用现代Web技术构建的响应式个人作品集网站，
+                            集成了动画效果、数据可视化和交互功能。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">响应式设计</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-view">
+                                <i class="fas fa-eye"></i>
+                                查看项目
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">心理学数据分析系统</h3>
+                        <p class="project-description">
+                            基于Python开发的心理学实验数据分析工具，
+                            能够处理多种统计测试和可视化分析。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">SPSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="research" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-view">
+                                <i class="fas fa-eye"></i>
+                                查看项目
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">消费者行为研究</h3>
+                        <p class="project-description">
+                            结合心理学和经济学理论，研究数字化环境下
+                            消费者决策行为的影响因素。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">实验设计</span>
+                            <span class="tech-tag">统计分析</span>
+                            <span class="tech-tag">行为经济学</span>
+                            <span class="tech-tag">论文写作</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="finance" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-coins project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-view">
+                                <i class="fas fa-eye"></i>
+                                查看项目
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">投资组合优化模型</h3>
+                        <p class="project-description">
+                            基于现代投资组合理论，使用Python构建的
+                            自动化投资组合优化和风险评估系统。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">金融建模</span>
+                            <span class="tech-tag">风险管理</span>
+                            <span class="tech-tag">数据可视化</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-view">
+                                <i class="fas fa-eye"></i>
+                                查看项目
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI助手聊天应用</h3>
+                        <p class="project-description">
+                            集成多个AI模型的智能聊天助手，
+                            支持文本生成、数据分析和代码编写。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AI API</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line project-icon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-view">
+                                <i class="fas fa-eye"></i>
+                                查看项目
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">校园数据仪表板</h3>
+                        <p class="project-description">
+                            为学校新媒体团队开发的数据可视化仪表板，
+                            实时监控和分析社交媒体表现。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dashboard</span>
+                            <span class="tech-tag">数据可视化</span>
+                            <span class="tech-tag">实时分析</span>
+                            <span class="tech-tag">API集成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">联系我</span>
+                <h2 class="section-title">让我们开始对话</h2>
+                <p class="section-subtitle">有想法？有项目？让我们一起探讨可能性</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>邮箱</h4>
+                            <p>272418392@qq.com</p>
+                            <small>我会在24小时内回复</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-weixin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>微信</h4>
+                            <p>LUN13751537106</p>
+                            <small>扫码添加好友</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/lunjinquan</p>
+                            <small>专业连接</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>github.com/lunjinquan</p>
+                            <small>查看我的代码</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-availability">
+                        <div class="availability-status">
+                            <div class="status-dot"></div>
+                            <span>目前可接受新项目</span>
+                        </div>
+                        <p>我正在寻找实习机会和项目合作</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">姓名</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">选择主题</option>
+                                <option value="collaboration">项目合作</option>
+                                <option value="internship">实习机会</option>
+                                <option value="consultation">咨询交流</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">消息</label>
+                            <textarea id="message" name="message" rows="6" placeholder="请详细描述您的想法或需求..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            发送消息
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="infinity-symbol">∞</span>
+                        <span>伦锦泉</span>
+                    </div>
+                    <p>心理学 × 经济学 × 编程 = 无限可能</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>导航</h4>
+                            <a href="#home">首页</a>
+                            <a href="#about">关于我</a>
+                            <a href="#skills">技能</a>
+                            <a href="#experience">经历</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>项目</h4>
+                            <a href="#projects">作品集</a>
+                            <a href="#">GitHub</a>
+                            <a href="#">简历下载</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>联系</h4>
+                            <a href="#contact">联系我</a>
+                            <a href="#">邮箱</a>
+                            <a href="#">微信</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 伦锦泉. 版权所有 | 用心设计，用技术创造价值</p>
+                    <p class="footer-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        中国 · 广东
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
